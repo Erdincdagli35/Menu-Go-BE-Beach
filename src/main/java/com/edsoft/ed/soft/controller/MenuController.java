@@ -42,7 +42,7 @@ public class MenuController {
                     new BeachMenuItems("Gözleme Çeşitleri", "Peynirli, patatesli, ıspanaklı gözlemeler", new BigDecimal("300"), BeachCategory.Snacks),
 
                     new BeachMenuItems("Hamburger", "Izgara köfte ile klasik hamburger", new BigDecimal("450"), BeachCategory.Burgers),
-                    new BeachMenuItems("Cheese Hamburger", "Kaşarlı hamburger", new BigDecimal("500"), BeachCategory.Burgers),
+                    new BeachMenuItems("Cheese Hamburger", "Cheddar peynirli hamburger", new BigDecimal("500"), BeachCategory.Burgers),
 
                     new BeachMenuItems("Patates", "Kızartılmış patates", new BigDecimal("200"), BeachCategory.Snacks),
                     new BeachMenuItems("Sigara Böreği", "Peynirli ince yufka böreği", new BigDecimal("200"), BeachCategory.Snacks),
@@ -72,7 +72,7 @@ public class MenuController {
                     new BeachMenuItems("Stuffed Flatbreads", "Varieties filled with cheese, potato, or spinach", new BigDecimal("300"), BeachCategory.Snacks),
 
                     new BeachMenuItems("Hamburger", "Grilled beef patty in bun", new BigDecimal("450"), BeachCategory.Burgers),
-                    new BeachMenuItems("Cheeseburger", "Hamburger with melted cheese", new BigDecimal("500"), BeachCategory.Burgers),
+                    new BeachMenuItems("Cheeseburger", "Hamburger with melted cheddar", new BigDecimal("500"), BeachCategory.Burgers),
 
                     new BeachMenuItems("French Fries", "Deep-fried potato sticks", new BigDecimal("200"), BeachCategory.Snacks),
                     new BeachMenuItems("Cigar Pastry", "Fried pastry filled with cheese", new BigDecimal("200"), BeachCategory.Snacks),
