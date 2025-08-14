@@ -32,9 +32,9 @@ public class MenuController {
                     new BeachMenuItems("Ev Yapımı Limonata", "Taze sıkılmış limonlu içecek", new BigDecimal("100"), BeachCategory.ColdDrinks),
                     new BeachMenuItems("Red Bull", "Enerji içeceği", new BigDecimal("150"), BeachCategory.ColdDrinks),
 
-                    new BeachMenuItems("Tuborg", "Şişe bira", new BigDecimal("200"), BeachCategory.Beer),
-                    new BeachMenuItems("Carlsberg", "Şişe bira", new BigDecimal("200"), BeachCategory.Beer),
-                    new BeachMenuItems("Sol", "Meksika usulü bira", new BigDecimal("250"), BeachCategory.Beer),
+                    new BeachMenuItems("Tuborg", "Şişe bira (50cl)", new BigDecimal("200"), BeachCategory.Beer),
+                    new BeachMenuItems("Carlsberg", "Şişe bira (50cl)", new BigDecimal("200"), BeachCategory.Beer),
+                    new BeachMenuItems("Sol", "Meksika usulü bira (33cl)", new BigDecimal("250"), BeachCategory.Beer),
 
                     new BeachMenuItems("Kaşarlı Tost", "Kaşar peyniri ile hazırlanan sıcak sandviç", new BigDecimal("200"), BeachCategory.Sandawichs),
                     new BeachMenuItems("Karışık Tost", "Sucuk, salam ve kaşar içeren sandviç", new BigDecimal("300"), BeachCategory.Sandawichs),
@@ -62,9 +62,9 @@ public class MenuController {
                     new BeachMenuItems("Homemade Lemonade", "Freshly squeezed lemon drink", new BigDecimal("100"), BeachCategory.ColdDrinks),
                     new BeachMenuItems("Red Bull", "Energy drink", new BigDecimal("150"), BeachCategory.ColdDrinks),
 
-                    new BeachMenuItems("Tuborg", "Bottled beer", new BigDecimal("200"), BeachCategory.Beer),
-                    new BeachMenuItems("Carlsberg", "Bottled beer", new BigDecimal("200"), BeachCategory.Beer),
-                    new BeachMenuItems("Sol", "Mexican-style ale beer", new BigDecimal("250"), BeachCategory.Beer),
+                    new BeachMenuItems("Tuborg", "Bottled beer (50cl)", new BigDecimal("200"), BeachCategory.Beer),
+                    new BeachMenuItems("Carlsberg", "Bottled beer (50cl)", new BigDecimal("200"), BeachCategory.Beer),
+                    new BeachMenuItems("Sol", "Mexican-style ale beer (33cl)", new BigDecimal("250"), BeachCategory.Beer),
 
                     new BeachMenuItems("Toast with Cheese", "Hot sandwich with melted cheese", new BigDecimal("200"), BeachCategory.Sandawichs),
                     new BeachMenuItems("Mixed Toast", "Hot sandwich with sausage, salami and cheese", new BigDecimal("300"), BeachCategory.Sandawichs),
