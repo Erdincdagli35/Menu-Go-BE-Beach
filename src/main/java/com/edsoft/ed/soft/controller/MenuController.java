@@ -27,13 +27,14 @@ public class MenuController {
                     new BeachMenuItems("Büyük Su", "1 lt su", new BigDecimal("100"), BeachCategory.HotDrinks),
 
                     new BeachMenuItems("Soğuk Kahve Çeşitleri", "Buzlu kahve çeşitleri", new BigDecimal("200"), BeachCategory.ColdDrinks),
-                    new BeachMenuItems("Soda", "Doğal maden suyu", new BigDecimal("80"), BeachCategory.ColdDrinks),
-                    new BeachMenuItems("Ayran", "Yoğurttan yapılan geleneksel içecek", new BigDecimal("80"), BeachCategory.ColdDrinks),
+                    new BeachMenuItems("Soda", "Doğal maden suyu", new BigDecimal("100"), BeachCategory.ColdDrinks),
+                    new BeachMenuItems("Ayran", "Yoğurttan yapılan geleneksel içecek", new BigDecimal("100"), BeachCategory.ColdDrinks),
+                    new BeachMenuItems("Soğuk İçecekler", "Soğuk içecek çeşitleri", new BigDecimal("150"), BeachCategory.ColdDrinks),
                     new BeachMenuItems("Ev Yapımı Limonata", "Taze sıkılmış limonlu içecek", new BigDecimal("100"), BeachCategory.ColdDrinks),
                     new BeachMenuItems("Red Bull", "Enerji içeceği", new BigDecimal("150"), BeachCategory.ColdDrinks),
 
-                    new BeachMenuItems("Tuborg", "Şişe bira (50cl)", new BigDecimal("200"), BeachCategory.Beer),
-                    new BeachMenuItems("Carlsberg", "Şişe bira (50cl)", new BigDecimal("200"), BeachCategory.Beer),
+                    new BeachMenuItems("Tuborg", "Şişe bira (50cl)", new BigDecimal("250"), BeachCategory.Beer),
+                    new BeachMenuItems("Carlsberg", "Şişe bira (50cl)", new BigDecimal("250"), BeachCategory.Beer),
                     new BeachMenuItems("Sol", "Meksika usulü bira (33cl)", new BigDecimal("250"), BeachCategory.Beer),
 
                     new BeachMenuItems("Kaşarlı Tost", "Kaşar peyniri ile hazırlanan sıcak sandviç", new BigDecimal("200"), BeachCategory.Sandawichs),
@@ -57,13 +58,14 @@ public class MenuController {
                     new BeachMenuItems("Large Water", "1 liter bottled water", new BigDecimal("100"), BeachCategory.HotDrinks),
 
                     new BeachMenuItems("Iced Coffee Varieties", "Cold coffee drinks with ice", new BigDecimal("200"), BeachCategory.ColdDrinks),
-                    new BeachMenuItems("Soda", "Sparkling mineral water", new BigDecimal("80"), BeachCategory.ColdDrinks),
-                    new BeachMenuItems("Ayran", "Traditional yogurt-based beverage", new BigDecimal("80"), BeachCategory.ColdDrinks),
+                    new BeachMenuItems("Soda", "Sparkling mineral water", new BigDecimal("100"), BeachCategory.ColdDrinks),
+                    new BeachMenuItems("Ayran", "Traditional yogurt-based beverage", new BigDecimal("100"), BeachCategory.ColdDrinks),
+                    new BeachMenuItems("Cold Drinks", "Cold drink varieties", new BigDecimal("150"), BeachCategory.ColdDrinks),
                     new BeachMenuItems("Homemade Lemonade", "Freshly squeezed lemon drink", new BigDecimal("100"), BeachCategory.ColdDrinks),
                     new BeachMenuItems("Red Bull", "Energy drink", new BigDecimal("150"), BeachCategory.ColdDrinks),
 
-                    new BeachMenuItems("Tuborg", "Bottled beer (50cl)", new BigDecimal("200"), BeachCategory.Beer),
-                    new BeachMenuItems("Carlsberg", "Bottled beer (50cl)", new BigDecimal("200"), BeachCategory.Beer),
+                    new BeachMenuItems("Tuborg", "Bottled beer (50cl)", new BigDecimal("250"), BeachCategory.Beer),
+                    new BeachMenuItems("Carlsberg", "Bottled beer (50cl)", new BigDecimal("250"), BeachCategory.Beer),
                     new BeachMenuItems("Sol", "Mexican-style ale beer (33cl)", new BigDecimal("250"), BeachCategory.Beer),
 
                     new BeachMenuItems("Toast with Cheese", "Hot sandwich with melted cheese", new BigDecimal("200"), BeachCategory.Sandawichs),
