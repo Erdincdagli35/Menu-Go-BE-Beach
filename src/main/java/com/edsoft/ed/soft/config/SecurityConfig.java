@@ -11,13 +11,13 @@ import java.util.List;
 @Configuration
 public class SecurityConfig {
 
+    /*
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        // 🔥 KRİTİK SATIR
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                         .anyRequest().permitAll()
                 );
@@ -44,5 +44,5 @@ public class SecurityConfig {
         source.registerCorsConfiguration("/**", config);
 
         return source;
-    }
+    }*/
 }
