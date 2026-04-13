@@ -1,0 +1,12 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  datasource:
+    url: jdbc:postgresql://metro.proxy.rlwy.net:37618/railway
+    username: postgres
+    password: norpyXfrFGFrfEWkaoHqZBKaidqNaRKN
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true

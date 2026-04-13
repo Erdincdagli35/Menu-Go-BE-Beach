@@ -1,36 +1,61 @@
 package com.edsoft.ed.soft.model;
 
-import java.math.BigDecimal;
+import jakarta.annotation.Nullable;
+import jakarta.persistence.*;
+import lombok.Data;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+
+@Entity
+@Table(name = "items")
+@Data
 public class BeachMenuItems {
+
     public BeachMenuItems() {}
 
-    public BeachMenuItems(String name, String description, BigDecimal price, BeachCategory beachCategory) {
-        this.name = name;
-        this.description = description;
+    public BeachMenuItems(Long id, BigDecimal price, List<MenuItemTranslation> translations, BeachCategory beachCategory) {
+        Id = id;
         this.price = price;
+        this.translations = translations;
         this.beachCategory = beachCategory;
     }
 
-    private String name;
-    private String description;
+    public BeachMenuItems(BeachCategory beachCategory, List<MenuItemTranslation> translations, BigDecimal price) {
+        this.beachCategory = beachCategory;
+        this.translations = translations;
+        this.price = price;
+    }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long Id;
+
     private BigDecimal price;
+
+
+    @OneToMany(mappedBy = "menuItem", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<MenuItemTranslation> translations = new ArrayList<>();
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private BeachCategory beachCategory;
 
-    public String getName() {
-        return name;
+    public Long getId() {
+        return Id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(Long id) {
+        Id = id;
     }
 
-    public String getDescription() {
-        return description;
+    public BeachCategory getBeachCategory() {
+        return beachCategory;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setBeachCategory(BeachCategory beachCategory) {
+        this.beachCategory = beachCategory;
     }
 
     public BigDecimal getPrice() {
@@ -41,11 +66,11 @@ public class BeachMenuItems {
         this.price = price;
     }
 
-    public BeachCategory getCategory() {
-        return beachCategory;
+    public List<MenuItemTranslation> getTranslations() {
+        return translations;
     }
 
-    public void setCategory(BeachCategory beachCategory) {
-        this.beachCategory = beachCategory;
+    public void setTranslations(List<MenuItemTranslation> translations) {
+        this.translations = translations;
     }
 }
