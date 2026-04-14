@@ -1,6 +1,7 @@
 package com.edsoft.ed.soft.controller;
 
 import com.edsoft.ed.soft.data.BeachMenu;
+import com.edsoft.ed.soft.model.BeachMenuItems;
 import com.edsoft.ed.soft.service.BeachMenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -24,5 +25,25 @@ public class MenuController {
         return ResponseEntity.ok(menuService.listAll(lang));
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<BeachMenuItems> getById(@PathVariable Long id) {
+        return ResponseEntity.ok(menuService.getById(id));
+    }
 
+    @PostMapping("/create")
+    public ResponseEntity<BeachMenuItems> create(@RequestBody BeachMenuItems item) {
+        return ResponseEntity.ok(menuService.save(item));
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<BeachMenuItems> update(@PathVariable Long id,
+                                                @RequestBody BeachMenuItems item) {
+        return ResponseEntity.ok(menuService.update(id, item));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        menuService.delete(id);
+        return ResponseEntity.noContent().build();
+    }
 }

@@ -40,27 +40,37 @@ public class BeachMenuService  {
                 .toList();
     }
 
-    public BeachMenuItems listProductById(Long id) {
+    public BeachMenuItems getById(Long id) {
         return menuRepository.findOneById(id);
     }
 
     public BeachMenuItems save(BeachMenuItems menuItem) {
+        if (menuItem.getTranslations() != null) {
+            menuItem.getTranslations().forEach(t -> t.setMenuItem(menuItem));
+        }
         return menuRepository.save(menuItem);
     }
 
-    public BeachMenuItems update(Long id, BeachMenuItems updatedMenuItem) {
-        BeachMenuItems menuItem = menuRepository.findOneById(id);
+    public BeachMenuItems update(Long id, BeachMenuItems updatedItem) {
+        BeachMenuItems existing = getById(id);
 
-        //menuItem.setName(updatedMenuItem.getName());
-        //menuItem.setDescription(updatedMenuItem.getDescription());
-        menuItem.setPrice(updatedMenuItem.getPrice());
-        //menuItem.setBeachCategory(updatedMenuItem.getCategory());
+        existing.setPrice(updatedItem.getPrice());
+        existing.setBeachCategory(updatedItem.getBeachCategory());
 
-        return menuRepository.save(menuItem);
+        // translation update (basit versiyon)
+        existing.getTranslations().clear();
+
+        if (updatedItem.getTranslations() != null) {
+            updatedItem.getTranslations().forEach(t -> {
+                t.setMenuItem(existing);
+                existing.getTranslations().add(t);
+            });
+        }
+
+        return menuRepository.save(existing);
     }
 
     public void delete(Long id) {
-        BeachMenuItems menuItems = menuRepository.findOneById(id);
-        menuRepository.delete(menuItems);
+        menuRepository.deleteById(id);
     }
 }

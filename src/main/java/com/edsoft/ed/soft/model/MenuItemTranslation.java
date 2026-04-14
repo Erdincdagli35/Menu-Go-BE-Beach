@@ -1,5 +1,6 @@
 package com.edsoft.ed.soft.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 @Entity
@@ -35,6 +36,7 @@ public class MenuItemTranslation {
     private String description;
 
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "items")
     private BeachMenuItems menuItem;
 

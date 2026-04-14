@@ -36,7 +36,7 @@ public class BeachMenuItems {
 
 
     @OneToMany(mappedBy = "menuItem", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<MenuItemTranslation> translations = new ArrayList<>();
+    private List<MenuItemTranslation> translations;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
