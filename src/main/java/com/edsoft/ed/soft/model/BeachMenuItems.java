@@ -34,7 +34,6 @@ public class BeachMenuItems {
 
     private BigDecimal price;
 
-
     @OneToMany(mappedBy = "menuItem", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<MenuItemTranslation> translations;
 
