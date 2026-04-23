@@ -58,7 +58,7 @@ public class BeachMenuService {
         BeachMenuItems savedItem = menuRepository.save(menuItem);
 
         // Kayıt başarılı olduktan sonra bildirim gönderiyoruz
-        String mesaj = "🚀 Yeni Menü Öğesi Eklendi!\n" +
+        String mesaj = "🚀 Yeni Menü Öğesi Eklendi! \n" +
                        "İsim: " + (savedItem.getTranslations().isEmpty() ? "İsimsiz" : savedItem.getTranslations().get(0).getName()) + "\n" +
                        "Fiyat: " + savedItem.getPrice();
         
