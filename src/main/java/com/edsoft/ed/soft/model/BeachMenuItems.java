@@ -34,8 +34,8 @@ public class BeachMenuItems {
 
     private BigDecimal price;
 
-    @OneToMany(mappedBy = "menuItem", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<MenuItemTranslation> translations;
+    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<MenuItemTranslation> translations = new ArrayList<>();
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
