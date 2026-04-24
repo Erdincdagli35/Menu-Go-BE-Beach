@@ -37,7 +37,7 @@ public class MenuItemTranslation {
 
     @ManyToOne
     @JsonIgnore
-    @JoinColumn(name = "items")
+    @JoinColumn(name = "menu_item_id")
     private BeachMenuItems menuItem;
 
     public Long getId() {
