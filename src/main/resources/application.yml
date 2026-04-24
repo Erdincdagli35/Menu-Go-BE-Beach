@@ -6,6 +6,7 @@ spring:
     url: jdbc:postgresql://shuttle.proxy.rlwy.net:45616/railway
     username: postgres
     password: ykpQMuKlLQjbMSoIHzarKgHseTtgDiGt
+
   jpa:
     hibernate:
       ddl-auto: update
