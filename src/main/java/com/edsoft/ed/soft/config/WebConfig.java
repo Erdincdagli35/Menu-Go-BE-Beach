@@ -27,7 +27,7 @@ public class WebConfig {
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("https://terasotelmenugo-beach.up.railway.app/", "http://localhost:4200"));
+        config.setAllowedOrigins(List.of("https://terasotelmenugo-beach-test.up.railway.app/", "http://localhost:4200"));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("Authorization", "Content-Type", "X-Requested-With", "Accept"));
         config.setAllowCredentials(true);
