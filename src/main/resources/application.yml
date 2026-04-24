@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://shuttle.proxy.rlwy.net:45616/railway
+    url: jdbc:postgresql://metro.proxy.rlwy.net:37618/railway
     username: postgres
-    password: ykpQMuKlLQjbMSoIHzarKgHseTtgDiGt
+    password: norpyXfrFGFrfEWkaoHqZBKaidqNaRKN
 
   jpa:
     hibernate:

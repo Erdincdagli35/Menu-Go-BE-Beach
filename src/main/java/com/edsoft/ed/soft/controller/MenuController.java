@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/menu")
 @CrossOrigin(origins = {"http://localhost:4200",
-                        "https://terasotelmenugo-beach.up.railway.app"})
+                        "https://terasotelmenugo-beach-test.up.railway.app"})
 public class MenuController {
 
     @Autowired
